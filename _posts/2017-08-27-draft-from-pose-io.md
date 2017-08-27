@@ -1,6 +1,7 @@
 ---
 published: true
 layout: post
+title: Title from option
 ---
 ## Pose.io
 
