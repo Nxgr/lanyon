@@ -76,7 +76,7 @@ with FUNCTION_NAME being Java_anative_hackit2017_com_apiclient_MainActivity_sign
 For now, your project tree should look like this :
 ![project tree]({{site.baseurl}}/_drafts/project_tree.png)
 
-Edit **build.gradle (Module:app)** by double clicking it. Then paste this block into the main android block :
+Edit _build.gradle (Module:app)_ by double clicking it. Then paste this block into the main android block :
 ```
     sourceSets.main {
         jniLibs.srcDirs = ['Libs']
@@ -93,7 +93,7 @@ In my case the arch was "x86".
 * Right click the _jniLibs_ folder in the project tree, then New -> Directory and name it according to the arch quoted above.
 * Drag and drop to copy your library file into the freshly created folder.
 
-**On this step you should be able to build your APK using the imported native Library. The following instructions are there to debug said library**
+***On this step you should be able to build your APK using the imported native Library. The following instructions are there to debug said library***
 
 ### 7. Setting up debugger
 From the menu in the top banner, go to _Run -> Edit Configurations..._
@@ -105,9 +105,17 @@ break set --name Java_anative_hackit2017_com_apiclient_MainActivity_signature
 ```
 ![debug config]({{site.baseurl}}/_drafts/debug_config.png)
 
-### 8. Last but not least
+### 8. Ready to launch
 
 Launch your app in debug mode : Run -> Debbug (maj + f9).
 You're going to need an virtual device if that's not already done, then you're good to go !
+
 On the bottom of android studio screen you should be able to interact with a lldb console, that just breaked into the breakpoint you set up early on.
 ![lldb interface]({{site.baseurl}}/_drafts/lldb.png)
+
+
+***Congratulations, the ball is on your side now. Happy reversing !***
+
+## Useful link :
+
+* [https://github.com/maaaaz/jnianalyzer](https://github.com/maaaaz/jnianalyzer)
