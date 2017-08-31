@@ -31,4 +31,14 @@ test block
 foobar
 ```
 
-2. Num list 2
++ Num list 2
+
+
+```
+second block
+```
+* num list 3
+
+qsmldkfj
+
+3. what's up with lists
