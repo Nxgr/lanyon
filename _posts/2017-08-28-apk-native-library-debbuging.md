@@ -42,7 +42,7 @@ This string can be splitted in 4 parts :
 ### 3. Create a new Android Studio Project
 The most important part here is to set the package name right since it'll be used to resolve the function name. You can either toy with the Application name and Company domain, or set it manually.
 
-![Create new project]({{site.baseurl}}/_drafts/new_project.png)
+![Create new project]({{site.baseurl}}/images/2017-08-28-apk-native-library-debbuging/new_project.png)
 
 Then end the project creation wizard by clicking Next -> Next -> Next -> Finish.
 
@@ -73,7 +73,7 @@ with FUNCTION_NAME being Java_anative_hackit2017_com_apiclient_MainActivity_sign
 ### 5. Gradle script edition
 
 For now, your project tree should look like this :
-![project tree]({{site.baseurl}}/_drafts/project_tree.png)
+![project tree]({{site.baseurl}}/images/2017-08-28-apk-native-library-debbuging/project_tree.png)
 
 Edit _build.gradle (Module:app)_ by double clicking it. Then paste this block into the main android block :
 ```
@@ -102,7 +102,7 @@ Last step is to add an LLDB Post Attach Commands, corresponding to a breakpoint 
 ```
 break set --name Java_anative_hackit2017_com_apiclient_MainActivity_signature
 ```
-![debug config]({{site.baseurl}}/_drafts/debug_config.png)
+![debug config]({{site.baseurl}}/images/2017-08-28-apk-native-library-debbuging/debug_config.png)
 
 ### 8. Ready to launch
 
@@ -110,7 +110,7 @@ Launch your app in debug mode : _Run -> Debug (maj + f9)_.
 You're going to need an virtual device if that's not already done, then you're good to go !
 
 On the bottom of android studio screen you should be able to interact with a lldb console, that just breaked into the breakpoint you set up early on.
-![lldb interface]({{site.baseurl}}/_drafts/lldb.png)
+![lldb interface]({{site.baseurl}}/images/2017-08-28-apk-native-library-debbuging/lldb.png)
 
 
 ***Congratulations, the ball is on your side now. Happy reversing !***
