@@ -22,7 +22,7 @@ _Italic text_
 
 -List item 3
 
-1. Num list 1
+### 1. Num list 1
 
 lksjqdlmk
 qsdlmkfj
@@ -31,14 +31,14 @@ test block
 foobar
 ```
 
-+ Num list 2
+### 2. Num list 2
 
 
 ```
 second block
 ```
-* num list 3
+### 3. num list 3
 
 qsmldkfj
 
-3. what's up with lists
+### 4. what's up with lists
