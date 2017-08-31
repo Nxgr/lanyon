@@ -104,3 +104,8 @@ break set --name Java_anative_hackit2017_com_apiclient_MainActivity_signature
 ![debug config]({{site.baseurl}}/_drafts/debug_config.png)
 
 8. Last but not least
+
+Launch your app in debug mode : Run -> Debbug (maj + f9).
+You're going to need an virtual device if that's not already done, then you're good to go !
+On the bottom of android studio screen you should be able to interact with a lldb console, that just breaked into the breakpoint you set up early on.
+![lldb interface]({{site.baseurl}}/_drafts/lldb.png)
